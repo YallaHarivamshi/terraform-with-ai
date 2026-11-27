@@ -13,10 +13,3 @@ output "security_group_id" {
 output "network_interface_id" {
   value = aws_network_interface.web_eni.id
 }
-
-
-cat > .checkov.yml <<'EOF'
-skip-check:
-  - CKV2_AWS_11
-EOF
-
