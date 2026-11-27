@@ -2,10 +2,9 @@ name: Terraform PR AI Review
 
 on:
   pull_request:
-  push:
+    types: [opened, synchronize, reopened]
     branches:
       - main
-
 permissions:
   contents: read
   pull-requests: write
